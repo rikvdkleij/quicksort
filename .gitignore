@@ -1,0 +1,6 @@
+dist
+*.o
+*.hi
+*.sublime*
+.cabal-sandbox
+cabal.sandbox.config
