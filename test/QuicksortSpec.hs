@@ -1,11 +1,14 @@
-module QuicksortSpec(main) where
+module QuicksortSpec(main, spec) where
 
 import           Quicksort
 import           Test.Hspec
 import           Test.QuickCheck
 
 main :: IO ()
-main = hspec $ do
+main = hspec spec
+
+spec :: Spec 
+spec =  do
   describe "quicksort" $ do
     it "sorts empty list" $ do
       quicksort [] `shouldBe` ([]::[Int])
