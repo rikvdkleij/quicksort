@@ -4,6 +4,8 @@ import           Quicksort
 import           Test.Hspec
 import           Test.QuickCheck
 
+{-# ANN module ("HLint: ignore Redundant do"::String) #-}
+
 main :: IO ()
 main = hspec spec
 
