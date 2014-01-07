@@ -15,7 +15,7 @@ test-suite spec
    type:                exitcode-stdio-1.0
    ghc-options:         -Wall -Werror
    hs-source-dirs:      test, src
-   main-is:             QuicksortSpec.hs
+   main-is:             Spec.hs
    build-depends: 
        base       >= 4.6 && <4.7
      , hspec      == 1.8.1.1
