@@ -1,4 +1,4 @@
-module Quicksort where
+module Quicksort(quicksort) where
 
 quicksort :: (Ord t) => [t] -> [t]
 quicksort [] = []
