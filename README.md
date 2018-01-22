@@ -7,4 +7,5 @@ Stack tool installed.
 
 ### Build and run the tests by executing in root of project:
 `stack build`
+
 `stack test`
