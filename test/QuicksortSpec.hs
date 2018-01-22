@@ -26,3 +26,7 @@ spec =  do
 
     it "returns same result if called twice" $ property $
        \xs -> (quicksort . quicksort) xs == (quicksort xs :: [Int])
+
+
+ss :: String
+ss = kk

@@ -6,20 +6,22 @@ cabal-version:       >=1.10
 build-type:          Simple
 
 library
-  build-depends:       
-       base >= 4.7  && < 4.10 
+  build-depends:         base, protolude
   exposed-modules:       Quicksort
   ghc-options:           -Wall
   hs-source-dirs:        src
   default-language:      Haskell2010
+  other-modules:         Example, Foo
 
 test-suite spec
    type:                 exitcode-stdio-1.0
-   ghc-options:          -Wall -Werror
-   hs-source-dirs:       test, src
+   ghc-options:          -Wall 
+   hs-source-dirs:       test
    main-is:              Spec.hs
    default-language:     Haskell2010
+   other-modules:        QuicksortSpec
    build-depends: 
        base       
-     , hspec      == 2.*
+     , hspec      
      , QuickCheck
+     , quicksort
